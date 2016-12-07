@@ -1,18 +1,22 @@
-var guess = document.getElementById('guess-field');
-var box = document.getElementById('box');
-var submitGuessButton = document.querySelector('.guess-button');
-var SubmitClearButton = document.querySelector('.clear-button');
-var SubmitResetButton = document.querySelector('.reset-button');
+var userGuess = document.getElementById('guess-field');
+var guessButton = document.querySelector('.guess-button');
 
-submitGuessButton.addEventListener('click', function(){
-  var userGuess =
-  box.innerText = guess.value;
-})
+var clearButton = document.querySelector('.clear-button');
+var lastGuess = document.getElementById('last-guess');
+
+var tooLowHigh = document.getElementById('too-high-low');
+var resButton = document.querySelector('.res-button');
+
+var ranNum = Math.floor(Math.random() * 100 + 1);
+
+
 // if (answer < randomNum) - display "That is too low"
 // if(answer > randomNum) - display "That is too high"
 // if (answer == randomNum) - display "BOOM!"
 // return false;
 
-//function for clearing fieldset
+//clickEventListener for guessbutton
 
-//function for resetting fieldset
+//clickEventListener for clear button
+
+//clickeventlistener for reset button
