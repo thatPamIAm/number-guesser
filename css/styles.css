@@ -1,6 +1,31 @@
-#box {
-  height: 100px;
-  width: 100px;
-  background-color: black;
-  color: white;
+body {
+  font-family: "Open sans";
+}
+
+header {
+  background-color:#404041;
+  font-size:40px;
+  padding:15px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 300;
+  color:#E6E7E8;
+  padding:10px;
+  text-align: center;
+}
+
+h1 span {
+  font-weight: 700;
+  color:#ED458B;
+}
+
+
+#guess-field {
+  display:block;
+}
+
+button {
+  display:block;
 }
