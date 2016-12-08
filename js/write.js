@@ -1,32 +1,48 @@
-var userGuess = document.getElementById('guess-field');
-var guessButton = document.querySelector('.guess-button');
+var userGuess = document.getElementById("guess-field");
+var guessButton = document.querySelector(".guess-button");
 
-var clearButton = document.querySelector('.clear-button');
-var lastGuess = document.getElementById('last-guess');
+var clearButton = document.querySelector(".clear-button");
+var lastGuess = document.getElementById("last-guess");
 
-var tooLowHigh = document.getElementById('too-high-low');
-var resButton = document.querySelector('.res-button');
+var tooLowHigh = document.getElementById("too-high-low");
+var yourLastGuess = document.getElementById("your-last-guess");
 
+var resButton = document.querySelector(".res-button");
 var ranNum = Math.floor(Math.random() * 100 + 1);
 
+function emptyField(){
+  userGuess.value="";
+}
+
 clearButton.addEventListener('click',function(){
-  console.log('PIZZZA');
-  // document.getElementById('guess-field').value;
-  clearMe();
+  emptyField();
+})
+
+resButton.addEventListener('click', function(){
+  location.reload();
 });
 
+guessButton.addEventListener('click', function (){
+  var userNumber = parseInt(userGuess.value);
+  emptyField();
 
-function clearMe() {
-  return userGuess.value= "";
-};
-///test
-// if (answer < randomNum) - display "That is too low"
-// if(answer > randomNum) - display "That is too high"
-// if (answer == randomNum) - display "BOOM!"
-// return false;
+  if (userNumber === ranNum){
+    yourLastGuess.innerText="Your last guess was"
+    lastGuess.innerText = userNumber;
+    tooLowHigh.innerText = "Boom!";
 
-//clickEventListener for guessbutton
+}
 
-//clickEventListener for clear button
+else if (userNumber < ranNum){
+  yourLastGuess.innerText="Your last guess was"
+  lastGuess.innerText = userNumber;
+  tooLowHigh.innerText = "That is too low!";
+}
 
-//clickeventlistener for reset button
+else if (userNumber > ranNum) {
+  yourLastGuess.innerText="Your last guess was"
+  lastGuess.innerText = userNumber;
+  tooLowHigh.innerText = "That is too high!";
+}
+console.log(ranNum);
+});

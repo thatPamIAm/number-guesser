@@ -1,31 +1,52 @@
 body {
   font-family: "Open sans";
+  font-weight: 300;
+  text-align: center;
 }
 
 header {
   background-color:#404041;
-  font-size:40px;
+  font-size:50px;
   padding:15px;
+  margin-bottom: 25px;
 }
 
 h1 {
   font-size: 40px;
-  font-weight: 300;
   color:#E6E7E8;
   padding:10px;
-  text-align: center;
 }
 
 h1 span {
   font-weight: 700;
-  color:#ED458B;
-}
-
-
-#guess-field {
-  display:block;
+  color: #ED458B;
 }
 
 button {
-  display:block;
+  background-color: #D0D2D3;
+  margin:10px;
+}
+
+#guess-field {
+  display: block;
+  height: 25px;
+  font-family:"Open sans";
+  font-weight:300;
+  font-size: 16pt;
+  margin: auto;
+  padding-left: 5px;
+}
+
+section {
+  margin: 20px;
+}
+
+p {
+  color:#404041;
+  font-size: 20px;
+}
+
+#last-guess {
+  font-size:150pt;
+  color:#EB008B;
 }
