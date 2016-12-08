@@ -12,7 +12,7 @@ header {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 32px;
   color:#E6E7E8;
   padding:10px;
 }
@@ -23,8 +23,11 @@ h1 span {
 }
 
 button {
-  background-color: #D0D2D3;
+  background-color: #929497;
+  border-radius: 25px;
+  width:100px;
   margin:10px;
+  color:#FFFFFF;
 }
 
 #guess-field {
@@ -37,6 +40,19 @@ button {
   padding-left: 5px;
 }
 
+.guess-button:hover{
+  background-color:#EB008B;
+}
+
+/* add for JS to disable/enable
+clear button
+.clear-button:disabled{
+  cursor: not-allowed;
+  pointer-events: none;
+  color: #c0c0c0;
+  background-color: #ffffff
+}
+*/
 section {
   margin: 20px;
 }
@@ -46,7 +62,15 @@ p {
   font-size: 20px;
 }
 
+#your-last-guess{
+  color:#404041;
+}
+
 #last-guess {
-  font-size:150pt;
+  font-size:125pt;
   color:#EB008B;
+}
+
+.res-button{
+  width: 225px;
 }
