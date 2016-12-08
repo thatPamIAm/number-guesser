@@ -3,21 +3,29 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script type="text/javascript" src="js/write.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+     rel="stylesheet">
     <meta charset="utf-8">
     <title>Number Guesser</title>
   </head>
 
   <body>
     <header>
-      <h1>Number Guesser</h1>
+      <h1><span>Number</span> Guesser</h1>
     </header>
-    <container>
-      <input class="guess-field" placeholder="Enter Your Guess">
-        <button class="guess-button">Guess</button>
-        <button class="clear-button">Clear</button>
-        <div id="box"></div>
-        <button class="reset-button">Reset</button>
-      </container>
+      <input id="guess-field" placeholder="Enter your guess" type="number">
+    <section class="top-buttons">
+      <button class="guess-button"type="button">Guess</button>
+      <button class="clear-button" type="button">Clear</button>
+    </section>
+
+    <section>
+      <p id="your-last-guess"></p>
+      <p id="last-guess"></p>
+      <p id="too-high-low"></p>
+        <button class="res-button" type="button">Reset</button>
+    </section>
+
+<script type="text/javascript" src="js/write.js"></script>
   </body>
 </html>
